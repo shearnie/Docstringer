@@ -33,7 +33,7 @@ namespace Docstringer
 
         private void RunVB()
         {
-            this.txtOut.Text = "Dim " + this.txtVarName.Text + " As New System.Text.Stringbuilder()\r\n";
+            this.txtOut.Text = "Dim " + this.txtVarName.Text + " As New System.Text.StringBuilder()\r\n";
 
             string[] s = this.txtIn.Text.Split("\r\n".ToCharArray());
             if (s == null) return;
@@ -53,7 +53,7 @@ namespace Docstringer
 
         private void RunCS()
         {
-            this.txtOut.Text = "var " + this.txtVarName.Text + " = new System.Text.Stringbuilder();\r\n";
+            this.txtOut.Text = "var " + this.txtVarName.Text + " = new System.Text.StringBuilder();\r\n";
 
             string[] s = this.txtIn.Text.Split("\r\n".ToCharArray());
             if (s == null) return;
